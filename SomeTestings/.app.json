@@ -35,6 +35,12 @@
               "name": "formResponse",
               "title": "Paragraph",
               "inputType": "paragraph"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "group",
+              "title": "My group",
+              "inputType": "group-separator"
             }
           ],
           "name": "formViewModel",
