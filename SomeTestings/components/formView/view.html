@@ -1,4 +1,4 @@
-<div data-role="view" data-title="Bsic Form" data-layout="main" data-model="app.formView" data-show="app.formView.onShow" data-after-show="app.formView.afterShow">
+<div data-role="view" data-title="Basic Form" data-layout="main" data-model="app.formView" data-show="app.formView.onShow" data-after-show="app.formView.afterShow">
     <div id="formViewModel" class="form-view">
         <form>
             <ul class="form-content" data-role="listview" data-style="inset">
@@ -14,6 +14,11 @@
                     <label>Password
                         <input data-bind="value: formViewModel.fields.password" placeholder="Password" type="password">
                     </label>
+
+                </li>
+                <li>
+
+                    <p id="formResponse" data-bind="html: formViewModel.fields.formResponse"></p>
 
                 </li>
             </ul>

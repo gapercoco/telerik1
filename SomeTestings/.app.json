@@ -29,6 +29,12 @@
               "title": "Password",
               "inputType": "password",
               "placeholder": "Password"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "formResponse",
+              "title": "Paragraph",
+              "inputType": "paragraph"
             }
           ],
           "name": "formViewModel",
@@ -36,7 +42,7 @@
           "cancelButton": "Cancel"
         }
       ],
-      "title": "Bsic Form",
+      "title": "Basic Form",
       "addToNavigation": true,
       "icon": "contacts"
     }

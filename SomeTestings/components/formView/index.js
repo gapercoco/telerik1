@@ -12,6 +12,7 @@ app.formView = kendo.observable({
 (function(parent) {
     var formViewModel = kendo.observable({
         fields: {
+            formResponse: '',
             password: '',
             username: '',
         },
