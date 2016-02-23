@@ -5,15 +5,45 @@
       "type": "kendo-ui-mobile:view",
       "name": "home",
       "components": [],
-      "title": "Home View",
+      "title": "Home",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "formView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "username",
+              "title": "Username",
+              "inputType": "text",
+              "placeholder": "Usuario"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "password",
+              "title": "Password",
+              "inputType": "password",
+              "placeholder": "Password"
+            }
+          ],
+          "name": "formViewModel",
+          "submitButton": "Ok",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Bsic Form",
+      "addToNavigation": true,
+      "icon": "contacts"
     }
   ],
   "dataProviders": [],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
+  "navigation": "drawer",
   "view": "home",
-  "transition": "slide",
   "skin": "flat"
 }
