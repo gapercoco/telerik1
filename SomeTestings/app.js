@@ -15,12 +15,12 @@
     };
 
     if (window.cordova) {
-        document.addEventListener('deviceready', function() {
-            if (navigator && navigator.splashscreen) {
-                navigator.splashscreen.hide();
+        window.document.addEventListener('deviceready', function() {
+            if (window.navigator && window.navigator.splashscreen) {
+                window.navigator.splashscreen.hide();
             }
 
-            var element = document.getElementById('appDrawer');
+            var element = window.document.getElementById('appDrawer');
             if (typeof(element) != 'undefined' && element !== null) {
                 if (window.navigator.msPointerEnabled) {
                     $('#navigation-container').on('MSPointerDown', 'a', function(event) {
@@ -45,15 +45,14 @@
         currentItem.addClass('active');
     };
 
-    window.app = app;
-
     app.isOnline = function() {
-        if (!navigator || !navigator.connection) {
+        if (!window.navigator || !window.navigator.connection) {
             return true;
-        } else {
-            return navigator.connection.type !== 'none';
-        }
+        } 
+        return window.navigator.connection.type !== 'none';
     };
+    
+    window.app = app;
 }());
 
 // START_CUSTOM_CODE_kendoUiMobileApp
